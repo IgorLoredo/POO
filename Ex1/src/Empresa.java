@@ -9,7 +9,26 @@ public class Empresa extends Agenda{
 	public String RazaoSocial;
 	
 	
-	public  void setCnpj(String r) {
+	public String toString() {
+		String novo = "Nome :" + this.Nome + " CPF " + this.Cnpj  +" Email " + this.Email+  " InscricaoEstadual "
+				+ this.InscricaoEstadual + " Endereco " + this.Endereco + " Razao Social " + this.RazaoSocial;
+		return novo;
+	}
+	
+	/*public void toString() {
+		System.out.println("Nome :" + this.Nome);
+		System.out.println("CPF");
+		
+		System.out.println("Email :");
+		System.out.println("Usuario");
+		System.out.println("Usuario");
+		System.out.println("Usuario");
+		System.out.println("Usuario");
+		
+	} */
+	
+	
+	public void setCnpj(String r) {
 		this.Cnpj = r;
 	}
 	

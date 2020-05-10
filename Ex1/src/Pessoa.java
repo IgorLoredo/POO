@@ -1,9 +1,15 @@
 
-
 public class Pessoa extends Agenda{
 	public String Cpf;
 	public String DataNascimento;
 	public String EstadoCivil;
+	
+	public String toString() {
+		String novo = "Nome :" + this.Nome + " CPF " + this.Cpf +"Email " + this.Email+  " Estado Civil "
+				+ this.EstadoCivil + " Endereco " + this.Endereco + " Data de Nascimento "+ this.DataNascimento;
+		return novo;
+	}
+	
 	
 	public  void setCpf(String r) {
 		this.Cpf = r;
