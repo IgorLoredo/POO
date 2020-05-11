@@ -8,6 +8,18 @@ public class OrgAgenda {
 	public OrgAgenda(int pessoas, int empresas) {
 		this.nPessoas =  pessoas;
 		this.nEmpresas = empresas;
+		for(int i =0 ; i < pessoas; i++) {
+			this.vetEmpreas[i] = new Empresa();
+		}
+		
+		for(int i =0 ; i < empresas; i++) {
+			this.vetPessoas[i] = new Pessoa();
+		}
+	}
+	
+	public OrgAgenda() {
+		this.nPessoas =  0;
+		this.nEmpresas = 0;
 	}
 	
 	public static void menuPrincipal() {
@@ -22,11 +34,48 @@ public class OrgAgenda {
 	
 	public static void menuOP(){
 		System.out.println("1 - Pessoa Fisica");
-		System.out.println("1 - Pessoa Juridica");
+		System.out.println("2 - Pessoa Juridica");
 	}
 	
-	public void Organizar() {
+	public void PrintALL() {
+		System.out.println(" Pessoas : ");
+		for(int i =0; i < this.nPessoas;i++) {
+			String r = this.vetPessoas[i].toString();
+			System.out.println(r);			
+		}
 		
+		System.out.println("Empresas : ");
 		
+		for(int i =0; i < this.nEmpresas;i++) {
+			String r = this.vetEmpreas[i].toString();
+			System.out.println(r);
+			
+		}
 	}
+	
+	public int PesquisaCPF(String cpf) {
+		for(int i =0; i < this.nPessoas;i++){
+			if(this.vetPessoas[i].Cpf == cpf) {
+				String r = this.vetPessoas[i].toString();
+				System.out.println(r);
+				return 1;
+			}
+		}
+		System.out.println("Nao existe esse CPF na agenda");
+		return 0;
+	}
+	
+	public int PesquisaCNPJ(String cnpj) {
+		for(int i =0; i < this.nEmpresas;i++){
+			if(this.vetEmpreas[i].Cnpj == cnpj) {
+				String r = this.vetEmpreas[i].toString();
+				System.out.println(r);
+				return 1;
+			}
+		}
+		System.out.println("Nao existe esse CNPJ na agenda");
+		return 0;
+	}
+	
+	
 }
