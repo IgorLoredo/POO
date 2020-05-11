@@ -8,6 +8,12 @@ public class Empresa extends Agenda{
 	public String InscricaoEstadual;
 	public String RazaoSocial;
 	
+	public Empresa() {
+		 this.Cnpj = "0";
+		 this.InscricaoEstadual = "0";
+		 this.RazaoSocial = "0";
+	}
+	
 	
 	public String toString() {
 		String novo = "Nome :" + this.Nome + " CPF " + this.Cnpj  +" Email " + this.Email+  " InscricaoEstadual "

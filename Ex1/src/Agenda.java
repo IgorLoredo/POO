@@ -5,6 +5,13 @@ public class Agenda {
 	public String Endereco;
 	public String Email;
 	
+	public Agenda() {
+		this.Nome= "0";
+		this.Endereco = "0";
+		this.Email = "0";
+	}
+	
+	
 	public void setNome(String r) {
 		Nome = r;
 	}
