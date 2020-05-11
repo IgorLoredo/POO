@@ -16,21 +16,21 @@ public class Ex1 {
 	public static void main(String[] args) throws IOException {
 		
 		int op = 1;
-		Pessoa 
+		
 		do {
-			menuPrincipal();
+			OrgAgenda.menuPrincipal();
 			op = EntradaTeclado.leInt();
 			switch (op) {
 				case 1: // inserir
-					menuOP();
+					OrgAgenda.menuOP();
 					
 					break;
 				case 2:
-					menuOP();
+					OrgAgenda.menuOP();
 					 
 					break;
 				case 3:
-					menuOP();
+					OrgAgenda.menuOP();
 					
 					break;
 				case 4:
@@ -48,20 +48,4 @@ public class Ex1 {
 
 	}
 	
-	public static void menuPrincipal() {
-		System.out.println("Escolha uma opcao");
-		System.out.println("1 - Inseri");
-		System.out.println("2 - Procurar");
-		System.out.println("3 - Excluir");
-		System.out.println("4 - Mostrar Agenda completa");
-		System.out.println("5 - Sair");
-	}
-	
-	public static void menuOP(){
-		System.out.println("1 - Pessoa Fisica");
-		System.out.println("1 - Pessoa Juridica");
-	}
-	
-	
-
 }

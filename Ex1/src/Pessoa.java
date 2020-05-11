@@ -16,7 +16,6 @@ public class Pessoa extends Agenda{
 		return novo;
 	}
 	
-	
 	public  void setCpf(String r) {
 		this.Cpf = r;
 	}
