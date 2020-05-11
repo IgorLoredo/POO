@@ -6,15 +6,21 @@ public class OrgAgenda {
 		public Empresa[] vetEmpreas; 
 	
 	public OrgAgenda(int pessoas, int empresas) {
-		this.nPessoas =  pessoas;
-		this.nEmpresas = empresas;
-		for(int i =0 ; i < pessoas; i++) {
-			this.vetEmpreas[i] = new Empresa();
+		try {
+			this.nPessoas =  pessoas;
+			this.nEmpresas = empresas;
+			for(int i =0 ; i < pessoas; i++) {
+				this.vetEmpreas[i] = new Empresa();
+			}
+			
+			for(int i =0 ; i < empresas; i++) {
+				this.vetPessoas[i] = new Pessoa();
+			}
+		
+		}catch(IllegalArgumentException e) {
+			
 		}
 		
-		for(int i =0 ; i < empresas; i++) {
-			this.vetPessoas[i] = new Pessoa();
-		}
 	}
 	
 	public OrgAgenda() {
@@ -54,28 +60,40 @@ public class OrgAgenda {
 	}
 	
 	public int PesquisaCPF(String cpf) {
-		for(int i =0; i < this.nPessoas;i++){
-			if(this.vetPessoas[i].Cpf == cpf) {
-				String r = this.vetPessoas[i].toString();
-				System.out.println(r);
-				return 1;
+		try {
+			for(int i =0; i < this.nPessoas;i++){
+				if(this.vetPessoas[i].Cpf == cpf) {
+					String r = this.vetPessoas[i].toString();
+					System.out.println(r);
+					return 1;
+				}
 			}
-		}
-		System.out.println("Nao existe esse CPF na agenda");
+			System.out.println("Nao existe esse CPF na agenda");
+			return 0;
+		}catch(IllegalArgumentException e) {
+			}
 		return 0;
 	}
 	
 	public int PesquisaCNPJ(String cnpj) {
-		for(int i =0; i < this.nEmpresas;i++){
-			if(this.vetEmpreas[i].Cnpj == cnpj) {
-				String r = this.vetEmpreas[i].toString();
-				System.out.println(r);
-				return 1;
+		try {
+			for(int i =0; i < this.nEmpresas;i++){
+				if(this.vetEmpreas[i].Cnpj == cnpj) {
+					String r = this.vetEmpreas[i].toString();
+					System.out.println(r);
+					return 1;
+				}
 			}
-		}
-		System.out.println("Nao existe esse CNPJ na agenda");
-		return 0;
+			System.out.println("Nao existe esse CNPJ na agenda");
+			return 0;
+		}catch(IllegalArgumentException e) {
+			}
+		
+	return 0;
 	}
 	
-	
+	public void inseriPessoa(String cpf) {
+		
+		
+	}
 }

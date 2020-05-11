@@ -16,7 +16,7 @@ public class Ex1 {
 	public static void main(String[] args) throws IOException {
 		
 		int op = 1;
-		
+		OrgAgenda agenda = new OrgAgenda();
 		do {
 			OrgAgenda.menuPrincipal();
 			op = EntradaTeclado.leInt();
