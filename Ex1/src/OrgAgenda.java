@@ -52,19 +52,21 @@ public class OrgAgenda {
 	}
 	
 	public void PrintALL() {
-		System.out.println(" Pessoas : ");
+		if(this.nPessoas > -1) {
+			System.out.println("	Pessoas : ");
+			for(int i =0; i < this.nPessoas;i++) {
+				String r = this.vetPessoas[i].toString();
+				System.out.println(r);			
+			} 
+		}
 		
-		for(int i =0; i < this.nPessoas;i++) {
-			String r = this.vetPessoas[i].toString();
-			System.out.println(r);			
-		} 
-		
-		System.out.println("Empresas : ");
-		
-		for(int i =0; i < this.nEmpresas;i++) {
-			String r = this.vetEmpreas[i].toString();
-			System.out.println(r);
-			
+		if(this.nEmpresas > -1) {
+			System.out.println("	Empresas : ");
+			for(int i =0; i < this.nEmpresas;i++) {
+				String r = this.vetEmpreas[i].toString();
+				System.out.println(r);
+				
+			}
 		}
 	}
 	

@@ -58,8 +58,9 @@ public class Ex1 {
 						agenda.apagarEmpresa(cnpj);
 					}
 					
-					break;
-				case 4:
+					break; 
+					
+				case 4: // printa tuydo
 					agenda.PrintALL();
 					break;
 				case 5: 
