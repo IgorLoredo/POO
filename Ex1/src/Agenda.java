@@ -13,7 +13,7 @@ public class Agenda {
 	
 	
 	public void setNome(String r) {
-		Nome = r;
+		this.Nome = r;
 	}
 	
 	public void setEmail(String r) {

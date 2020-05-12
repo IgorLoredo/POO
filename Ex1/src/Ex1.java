@@ -1,4 +1,4 @@
-import java.awt.peer.MenuPeer;
+
 import java.io.IOException;
 
 //igor guilherme pereira loredo
@@ -14,24 +14,40 @@ import java.io.IOException;
 public class Ex1 {
 
 	public static void main(String[] args) throws IOException {
-		
+		String cnpj,cpf;
 		int op = 1;
 		OrgAgenda agenda = new OrgAgenda();
-		do {
-			OrgAgenda.menuPrincipal();
+		
+		while(op!=0) {
+			System.out.println();
+			agenda.menuPrincipal();
 			op = EntradaTeclado.leInt();
 			switch (op) {
 				case 1: // inserir
 					OrgAgenda.menuOP();
-					
+					op = EntradaTeclado.leInt();
+					if (op == 1)
+						agenda.inseriPessoa();
+					else
+						agenda.inseriEmpresa();
+						
 					break;
+					
 				case 2:
 					OrgAgenda.menuOP();
 					op = EntradaTeclado.leInt();
-					if ()
+					if (op == 1) {
+						System.out.println("CPF para Buscar:");
+						cpf = EntradaTeclado.leString();
+						agenda.PesquisaCPF(cpf);						
+					}else {
+						cnpj = EntradaTeclado.leString();
+						agenda.PesquisaCNPJ(cnpj);
+					}
 					break;
 				case 3:
 					OrgAgenda.menuOP();
+					op = EntradaTeclado.leInt();
 					
 					break;
 				case 4:
@@ -45,8 +61,9 @@ public class Ex1 {
 					break;
 				}
 			
-		}while(op> 1);
-
+			
+		}
+		
 	}
 	
 }
