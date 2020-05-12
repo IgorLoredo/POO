@@ -27,7 +27,8 @@ public class Ex1 {
 					break;
 				case 2:
 					OrgAgenda.menuOP();
-					 
+					op = EntradaTeclado.leInt();
+					if ()
 					break;
 				case 3:
 					OrgAgenda.menuOP();

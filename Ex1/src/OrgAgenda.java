@@ -48,7 +48,7 @@ public class OrgAgenda {
 		for(int i =0; i < this.nPessoas;i++) {
 			String r = this.vetPessoas[i].toString();
 			System.out.println(r);			
-		}
+		} 
 		
 		System.out.println("Empresas : ");
 		
@@ -77,7 +77,7 @@ public class OrgAgenda {
 	
 	public int PesquisaCNPJ(String cnpj) {
 		try {
-			for(int i =0; i < this.nEmpresas;i++){
+			for(int i =0; i < this.nEmpresas;i++){ 
 				if(this.vetEmpreas[i].Cnpj == cnpj) {
 					String r = this.vetEmpreas[i].toString();
 					System.out.println(r);
