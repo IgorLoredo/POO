@@ -33,7 +33,7 @@ public class Ex1 {
 						
 					break;
 					
-				case 2:
+				case 2: // busca
 					OrgAgenda.menuOP();
 					op = EntradaTeclado.leInt();
 					if (op == 1) {
@@ -48,10 +48,19 @@ public class Ex1 {
 				case 3:
 					OrgAgenda.menuOP();
 					op = EntradaTeclado.leInt();
+					if (op == 1) {
+						System.out.println("CPF para Apagar:");
+						cpf = EntradaTeclado.leString();
+						agenda.apagarPessoa(cpf);						
+					}else {
+						System.out.println("CNPJ para Apagar:");
+						cnpj = EntradaTeclado.leString();
+						agenda.apagarEmpresa(cnpj);
+					}
 					
 					break;
 				case 4:
-					
+					agenda.PrintALL();
 					break;
 				case 5: 
 					op = 0;
