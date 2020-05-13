@@ -1,15 +1,14 @@
-
 import java.io.IOException;
-
 //igor guilherme pereira loredo
-// 11275071
+//11275071
 
 /*
- * use o cpf como metodo de busca pq não haveria um igual
- * criei uma classe agenda que tem duas classes filhas pessoa  empresa
- * e ainda criei uma classes para gerenciar tudo (org agenda) 
- */
-public class Ex1 {
+* use o cpf como metodo de busca pq não haveria um igual
+* criei uma classe agenda que tem duas classes filhas pessoa  empresa
+* e ainda criei uma classes para gerenciar tudo (org agenda) 
+*/
+
+public class Ex2 {
 
 	public static void main(String[] args) throws IOException {
 		String cnpj,cpf;
@@ -24,11 +23,14 @@ public class Ex1 {
 				case 1: // inserir
 					OrgAgenda.menuOP();
 					op = EntradaTeclado.leInt();
-					if (op == 1)
+					if (op == 1) {
 						agenda.inseriPessoa();
-					else
+						agenda.OrdenarCPF(); // ordena
+					}
+					else {
 						agenda.inseriEmpresa();
-						
+						agenda.OrdenarCNPJ(); // ordena
+					}
 					break;
 					
 				case 2: // busca
@@ -67,11 +69,10 @@ public class Ex1 {
 				default:
 					System.out.println("Opcao errada!!");
 					break;
-				}
-			
+				}		
 			
 		}
 		
 	}
-	
+
 }
