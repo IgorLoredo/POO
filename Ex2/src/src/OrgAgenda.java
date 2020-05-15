@@ -232,6 +232,36 @@ public class OrgAgenda {
 			}	
 		return 1;
 	}
+
+	public void OrdenarCNPJ() {
+		String a,b;
+		Empresa aux;
+		for(int i =0; i< this.nEmpresas-1;i++) {
+			 a = this.vetEmpreas[i].getCnpf();
+			 b = this.vetEmpreas[i+1].getCnpf();
+			if(a.compareTo(b) < 0) {
+				aux =this.vetEmpreas[i];
+				this.vetEmpreas[i] = this.vetEmpreas[i+1];
+				this.vetEmpreas[i+1] = aux;
+			}
+		}
+		
+	}
+
+	public void OrdenarCPF() {
+		String a,b;
+		Pessoa aux;
+		for(int i =0; i< this.nPessoas-1;i++) {
+			 a = this.vetPessoas[i].getCpf();
+			 b = this.vetPessoas[i+1].getCpf();
+			if(a.compareTo(b) < 0) {
+				aux = this.vetPessoas[i];
+				this.vetPessoas[i] = this.vetPessoas[i+1];
+				this.vetPessoas[i+1] = aux;
+			}
+		}
+		
+	}
 }
 
 
