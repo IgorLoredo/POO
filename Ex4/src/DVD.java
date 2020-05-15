@@ -1,4 +1,4 @@
-
+//igor guilherme pereira loredo 11275071
 
 
 public class DVD extends Produto {
@@ -18,7 +18,8 @@ public class DVD extends Produto {
 				+  "\nNome: " + this.Nome +
 				"\nAutor " + this.Autor +
 				"\nPreco: " + this.preco +
-				"\n Categoria " + this.Categoria +"\nDuracao "+ this.duracao;
+				"\n Categoria " + this.Categoria +"\nDuracao "+ this.duracao
+				+"\nPode vender: "+ this.PodeVender;
 		return r;
 	}
 

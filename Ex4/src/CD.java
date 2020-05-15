@@ -1,8 +1,8 @@
-
+//igor guilherme pereira loredo 11275071
 
 
 public class CD extends Produto {
-	public int nMusicas;
+	public int nMusicas; // numeros de musicas e duracao do cd completo
 	public int duracao;
 
 	public CD() {
@@ -21,7 +21,7 @@ public class CD extends Produto {
 				"\nPreco: " + this.preco +
 			"\n Categoria " + this.Categoria +"\nNumero de Musicas "+
 				this.nMusicas + "\nDuracao " 
-				+ this.duracao;
+				+ this.duracao +"\nPode vender: "+ this.PodeVender;
 		return r;
 	}
 	

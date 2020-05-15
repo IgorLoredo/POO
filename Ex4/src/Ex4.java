@@ -1,3 +1,5 @@
+//igor guilherme pereira loredo 11275071
+
 import java.io.IOException;
 
 
@@ -23,28 +25,33 @@ public class Ex4 {
 				case 1: // inseri
 					Loja.MenuOP();
 					op = EntradaTeclado.leInt();
-					lojaNova.Inserir(op);
+					try {
+						lojaNova.Inserir(op);
+					}catch(IllegalArgumentException e) {
+						
+					}
 					break;
 					
 				case 2: // buscar
-					Loja.MenuOP();
-					op = EntradaTeclado.leInt();
-					
-					
+					try {
+						lojaNova.busca();
+					}catch(IllegalArgumentException e) {
+						
+					}
 					break;
 					
 				case 3: //mostrar estoque
-					lojaNova.estoque();
+					try {
+						lojaNova.estoque();
+					}catch(IllegalArgumentException e) {
+							
+					}
 					break;
-					
 				case 4: //vender
-					Loja.MenuOP();
-					op = EntradaTeclado.leInt();
-					if(op == 1) {} // livros
-					else if(op == 2) {} // dvds
-					else if(op == 3) {} //cds
-					else {
-						System.out.println("      Escolher uma Opcao valida");
+					try {
+						lojaNova.vender();
+					}catch(IllegalArgumentException e) {
+						
 					}
 					break;
 					

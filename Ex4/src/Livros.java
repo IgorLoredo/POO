@@ -1,3 +1,5 @@
+//igor guilherme pereira loredo 11275071
+
 
 /* Crie uma hierarquia de classes para representar os produtos de uma loja: livros, CDs e DVDs.
  * Um produto é identificado unicamente pelo seu código de barras. Implemente, também,
@@ -26,7 +28,8 @@ public class Livros extends Produto {
 				"\nPreco: " + this.preco +
 				"\n1Categoria " + this.Categoria +
 				"\nNumero de Paginas "+ this.nPaginas + 
-				"\nNumero de capitulos " + this.nCapitulos;
+				"\nNumero de capitulos " + this.nCapitulos
+				+"\nPode vender: "+ this.PodeVender;
 		return r;
 	}
 	
