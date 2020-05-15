@@ -8,5 +8,5 @@ public class CD extends Produto {
 	public CD(int cod_Barras) {
 		super(cod_Barras);
 	}
-
+	
 }
