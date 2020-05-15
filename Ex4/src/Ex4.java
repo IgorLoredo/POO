@@ -23,27 +23,18 @@ public class Ex4 {
 				case 1: // inseri
 					Loja.MenuOP();
 					op = EntradaTeclado.leInt();
-					if(op == 1) {} // livros
-					else if(op == 2) {} // dvds
-					else if(op == 3) {} //cds
-					else {
-						System.out.println("      Escolher uma Opcao valida");
-					}
+					lojaNova.Inserir(op);
 					break;
 					
 				case 2: // buscar
 					Loja.MenuOP();
 					op = EntradaTeclado.leInt();
-					if(op == 1) {} // livros
-					else if(op == 2) {} // dvds
-					else if(op == 3) {} //cds
-					else {
-						System.out.println("      Escolher uma Opcao valida");
-					}
+					
+					
 					break;
 					
 				case 3: //mostrar estoque
-					
+					lojaNova.estoque();
 					break;
 					
 				case 4: //vender
@@ -59,6 +50,7 @@ public class Ex4 {
 					
 				case 5:
 					System.out.println("   Saindo ");
+					op =0;
 					break;
 					
 				default:

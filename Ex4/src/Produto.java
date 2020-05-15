@@ -20,13 +20,13 @@ public class Produto {
 		this.cod_barras = cod_Barras;
 	}
 	
-	public String toString(){
+	/*public String toString(){
 		return "\nCodigo de Barra: " + this.cod_barras
 				+  "\nNome: " + this.Nome +
 				"\nAutor " + this.Autor +
 				"\nPreco: " + this.preco +
 				"\n Categoria " + this.Categoria;	
-	}
+	}*/
 	
 	// metodos set
 	public void setNome(String r) {
@@ -43,10 +43,6 @@ public class Produto {
 	
 	public void setPreco(double r) {
 		this.preco = r;
-	}
-	
-	public void setNome(int r) {
-		this.cod_barras = r;
 	}
 	
 	

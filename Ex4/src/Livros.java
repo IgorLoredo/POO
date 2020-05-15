@@ -8,10 +8,45 @@
  **/
 
 public class Livros extends Produto {
+	public int nPaginas;
+	public int nCapitulos;
 	
+	public Livros () {
+		this.nPaginas =0;
+	}
 	
 	public Livros(int cod_Barras) {
 		super(cod_Barras);
 	}
-
+	
+	public String toString() {
+		String r = "\nCodigo de Barra: " + this.cod_barras
+				+  "\nNome: " + this.Nome +
+				"\nAutor " + this.Autor +
+				"\nPreco: " + this.preco +
+				"\n1Categoria " + this.Categoria +
+				"\nNumero de Paginas "+ this.nPaginas + 
+				"\nNumero de capitulos " + this.nCapitulos;
+		return r;
+	}
+	
+	//sets
+	public void setnPaginas(int num) {
+		this.nPaginas = num;
+	}
+	
+	public void setnCapitulos(int num) {
+		this.nCapitulos = num;
+	}
+	
+	//gets
+	public int getNPaginas() {
+		return this.nPaginas;
+	}
+	
+	public int getNCapitulos() {
+		return this.nCapitulos;
+	}
+	
+	
 }
