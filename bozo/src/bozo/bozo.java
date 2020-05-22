@@ -6,6 +6,8 @@ package bozo;
 
 import java.io.IOException;
 
+import EntradaTeclado;
+
 public class bozo {
 
 	public static void main(String[] args) throws IOException {

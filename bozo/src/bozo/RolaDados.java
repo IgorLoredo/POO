@@ -4,8 +4,8 @@
 package bozo;
 
 public class RolaDados {
-	private Dado[] dados;
-	private int quantLados;
+	public Dado[] dados;
+	public int quantLados;
 	
 	public RolaDados(int quant) {
 		if (quant  > 0) { // tem que ser acima de 1 dado pra rolar
