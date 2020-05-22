@@ -1,6 +1,7 @@
 # POO
 Atividades da materia de poo - USP ICMC
 #Igor Loredo#
+//
 Jogo de Bozó
 O Bozó é um jogo de dados em que cada jogador tenta preencher 10 posições de um tabuleiro com o maior número de pontos possvel.
 
