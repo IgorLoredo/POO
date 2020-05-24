@@ -1,7 +1,11 @@
+// igor guilherme pereira loredo
+// 11275071
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import bozo.Placar;
@@ -31,12 +35,11 @@ public class PlacarTest {
 		p1.add(new int[]{4,4,4,4,4}, 4);
 		p1.add(new int[]{5,5,5,5,5}, 5);
 		p1.add(new int[]{6,6,6,6,6}, 6);
-		p1.add(new int[]{3,3,6,6,6}, 7);
+		p1.add(new int[]{5,5,5,5,5}, 7);
 		p1.add(new int[]{6,6,6,6,6}, 8);
 		p1.add(new int[]{6,6,6,6,6}, 9);
 		p1.add(new int[]{6,6,6,6,6}, 10);
 	}
-	private Placar p1;
 
 	@Test
 	public void testAddDifentes(){ // todos com um numero diferente
@@ -64,11 +67,57 @@ public class PlacarTest {
 		p1.add(new int[]{5,5,5,5,6}, 5);
 		p1.add(new int[]{6,6,6,6,7}, 6);
 		p1.add(new int[]{3,3,6,6,6}, 7);
-		p1.add(new int[]{6,6,6,6,6}, 8);
+		p1.add(new int[]{1,2,3,4,5}, 8);
 		p1.add(new int[]{6,6,6,6,6}, 9);
 		p1.add(new int[]{6,6,6,6,6}, 10);
-	
 	}
+
+	
+	// tenta inseriro novamente nos lugares ja ocupados
+	
+	@Test
+	public void testAddQuebra1(){
+		Placar p1 = new Placar();
+		p1.add(new int[]{1,1,1,1,2}, 1);
+		p1.add(new int[]{1,1,1,1,2}, 1);
+	}
+	
+	@Test
+	public void testAddQuebra2(){
+		Placar p1 = new Placar();
+		p1.add(new int[]{1,1,1,1,2}, 2);
+		p1.add(new int[]{1,1,1,1,2}, 2);
+	}
+	
+	@Test
+	public void testAddQuebra3(){
+		Placar p1 = new Placar();
+		p1.add(new int[]{1,1,1,1,2}, 3);
+		p1.add(new int[]{1,1,1,1,2}, 3);
+	}
+	
+	
+	@Test
+	public void testAddQuebra4(){
+		Placar p1 = new Placar();
+		p1.add(new int[]{1,1,1,1,2}, 4);
+		p1.add(new int[]{1,1,1,1,2}, 4);
+	}
+	
+	@Test
+	public void testAddQuebra5(){
+		Placar p1 = new Placar();
+		p1.add(new int[]{1,1,1,1,2}, 5);
+		p1.add(new int[]{1,1,1,1,2}, 5);
+	}
+	
+	@Test
+	public void testAddQuebra6(){
+		Placar p1 = new Placar();
+		p1.add(new int[]{1,2,3,4,5}, 6);
+		p1.add(new int[]{1,1,1,1,2}, 6);
+	}
+	
 	
 	@Test
 	public void testGetScore() {

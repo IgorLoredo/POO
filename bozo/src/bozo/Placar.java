@@ -22,7 +22,7 @@ public class Placar {
 			 switch (pos) {
 				 case 1:
 					 if (placarAtual[0] != -1)
-						 throw new IllegalArgumentException("Posicao ocupada.");
+							throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -34,7 +34,7 @@ public class Placar {
 					break;
 				 case 2:
 						 if (placarAtual[1] != -1)
-							 throw new IllegalArgumentException("Posicao ocupada.");
+								throw new IllegalArgumentException("Posicao ocupada.");
 		                 else {
 		                     int result = 0;
 		                     for(int i = 0; i<5; i++){
@@ -47,7 +47,7 @@ public class Placar {
 					 
 				 case 3 :
 						 if (placarAtual[2] != -1)
-							 throw new IllegalArgumentException("Posicao ocupada.");
+								throw new IllegalArgumentException("Posicao ocupada.");
 		                 else {
 		                     int result = 0;
 		                     for(int i = 0; i<5; i++){
@@ -60,7 +60,7 @@ public class Placar {
 					break;
 				 case 4:
 					 if (placarAtual[3] != -1)
-						 throw new IllegalArgumentException("Posicao ocupada.");
+							throw new IllegalArgumentException("Posicao ocupada.");
 	                 else {
 	                     int result = 0;
 	                     for(int i = 0; i<5; i++){
@@ -134,9 +134,10 @@ public class Placar {
 	                    if(seq[i] > 1)
 	                    	placarAtual[7] = 0;
 	                }
-	                
+	                System.out.println(placarAtual[7]);
 	                if(placarAtual[7] != 0)             	
 	                	placarAtual[7] = 20;
+	                
 	                break;
 		            
 			case 9: /// quadra
