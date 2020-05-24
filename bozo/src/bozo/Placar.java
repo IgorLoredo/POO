@@ -113,7 +113,8 @@ public class Placar {
 	                	flagFull = 1;
 	            }
 	
-	            if(flag2 == 1 && flag3 == 1) placarAtual[6] = 15;
+	            if(flag2 == 1 && flag3 == 1)
+	            	placarAtual[6] = 15;
 	            else if(flagFull == 1) 
 	            	placarAtual[6] = 15;
 	            else
