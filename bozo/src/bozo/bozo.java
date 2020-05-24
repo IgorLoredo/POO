@@ -13,7 +13,7 @@ public class bozo {
 	public static void main(String[] args) throws IOException {
 		RolaDados vetdados = new RolaDados(5);
 		Placar placar = new Placar();
-		
+		 
 		System.out.println("-------------------------------------------");
 		System.out.println("   	        Bozo/General");
 		System.out.println("___________________________________________");
