@@ -4,9 +4,9 @@
 package bozo;
 
 public class Dado {
-	private int lados;
-	private Random rand;
-	private int LadoCima;
+	public int lados;
+	public Random rand;
+	public int LadoCima;
 	
 	
 	public int rolar() { // usa o rand e rola os dados de forma efiente
