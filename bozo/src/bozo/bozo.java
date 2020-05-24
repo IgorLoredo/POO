@@ -29,6 +29,7 @@ public class bozo {
 			System.out.printf("Escolha os dados para rolar novamente ou digite Enter para terminar a  rodada\n");
 			
 			
+			
             String novos = EntradaTeclado.leString();		
 			
             

@@ -22,7 +22,7 @@ public class RolaDados {
 	
     public int[] rolar () { // rola a quantidade de dados que ele quer
         int mostra[];
-        mostra = new int[quantLados];
+        mostra = new int[this.quantLados];
         for (int i = 0; i < quantLados; i++) {
             mostra[i] = dados[i].rolar();
         }
@@ -32,7 +32,7 @@ public class RolaDados {
     
     public int [] rolar (String s) {
         int resultado[], auxiliar[];
-        resultado = new int[quantLados];
+        resultado = new int[this.quantLados];
         String separados[];
         separados = s.split(" ");
         int tam = separados.length;

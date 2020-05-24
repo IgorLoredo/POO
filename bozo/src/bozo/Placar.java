@@ -5,7 +5,7 @@
 package bozo;
 
 public class Placar {
-	private int[] placarAtual;
+	public int[] placarAtual;
 	
 	
 	public Placar () {
